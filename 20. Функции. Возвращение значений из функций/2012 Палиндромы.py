@@ -7,5 +7,5 @@ def palindrome(s):
     return 'Палиндром'
 
 
-print(palindrome('А роза упала на лапу Азора'))
-print(palindrome('Палиндром'))
+# print(palindrome('А роза упала на лапу Азора'))
+# print(palindrome('Палиндром'))

@@ -1,4 +1,4 @@
-def roots_of_quadratic_equation(a,b,c):
+def roots_of_quadratic_equation(a, b, c):
     if a == 0:
         return [] if (b == 0 and c != 0) else (['all'] if b == 0 else [-c / b])
 
