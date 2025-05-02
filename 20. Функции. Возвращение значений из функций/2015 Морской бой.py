@@ -1,17 +1,20 @@
 def transpose(matrix):
-    res = []
     lm = len(matrix)
-    for i in range(lm - 1, -1, -1):
-        res.append(matrix[i].reverse())
+    row = []
+    res = []
+    for i in range(lm):
+        for j in range(lm):
+            #res[j][i] = matrix[i][j]
+            row.append(matrix[j][i])
+        res.append(row.copy())
+        row.clear()
     return res
 
 
 def flip_h(matrix):
     res = []
     for m in matrix:
-        print('m = ', m)
         mr = m[::-1]
-        print('mr = ', mr)
         res.append(mr)
     return res
 
@@ -29,6 +32,11 @@ fields.append(origin)
 fields.append(flip_h(origin))
 fields.append(flip_v(origin))
 fields.append(transpose(origin))
+fields.append(flip_h(flip_v(origin)))
+fields.append(flip_v(transpose(origin)))
+fields.append(flip_v(flip_h(transpose(origin))))
 
 for f in fields:
-    print(f)
+    for ff in f:
+        print(ff)
+    print('--------------------')
