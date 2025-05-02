@@ -4,7 +4,6 @@ def transpose(matrix):
     res = []
     for i in range(lm):
         for j in range(lm):
-            #res[j][i] = matrix[i][j]
             row.append(matrix[j][i])
         res.append(row.copy())
         row.clear()
@@ -25,9 +24,9 @@ def flip_v(matrix):
 
 fields = list()
 origin = [['x', 'x', 'x', '.'],
-['.', '.', '.', '.'],
-['x','.','x','x'],
-['x','.','.','.']]
+          ['.', '.', '.', '.'],
+          ['x', '.', 'x', 'x'],
+          ['x', '.', '.', '.']]
 fields.append(origin)
 fields.append(flip_h(origin))
 fields.append(flip_v(origin))
