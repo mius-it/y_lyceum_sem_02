@@ -10,9 +10,9 @@ def password_level(password):
     return 'Надежный пароль'
 
 
-print(password_level("kgsu"))
-print(password_level("12345678"))
-print(password_level("qwertyuiop"))
-print(password_level("qWerTyuiOp"))
-print(password_level("qwerty123"))
-print(password_level("QwerTy123"))
+# print(password_level("kgsu"))
+# print(password_level("12345678"))
+# print(password_level("qwertyuiop"))
+# print(password_level("qWerTyuiOp"))
+# print(password_level("qwerty123"))
+# print(password_level("QwerTy123"))

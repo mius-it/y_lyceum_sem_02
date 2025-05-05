@@ -20,7 +20,7 @@ def check_pin(pinCode):
     return 'Корректен'
 
 
-print(check_pin('7-101-4'))
-print(check_pin('12-22-16'))
-print(check_pin('7-23-16'))
-print(check_pin('7-101-66'))
+# print(check_pin('7-101-4'))
+# print(check_pin('12-22-16'))
+# print(check_pin('7-23-16'))
+# print(check_pin('7-101-66'))
