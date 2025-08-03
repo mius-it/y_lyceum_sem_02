@@ -1,16 +1,12 @@
 def tribonacci(n):
-    trib = []
-    if n == 0:
-        return 'Число должно быть больше 0'
-    if n > 0:
-        trib.append(0)
-    if n > 1:
-        trib.append(0)
     if n > 2:
-        trib.append(1)
-    if n > 3:
-        pass
-    return trib
+        return tribonacci(n - 1) + tribonacci(n - 2) + tribonacci(n - 3)
+    elif n == 2:
+        return 1
+    elif n == 1:
+        return 0
+    elif n == 0:
+        return 0
 
 
-print(tribonacci(3))
+print(tribonacci(7))
